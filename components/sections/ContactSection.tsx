@@ -1,133 +1,74 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("sending");
-    // Simulate sending
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    }, 1500);
-  };
-
   return (
     <section id="contact" className="py-24 px-6 bg-white dark:bg-[#0a0a0a] transition-colors duration-500">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="container mx-auto max-w-4xl text-center">
 
-          {/* Contact Info Side */}
-          <div className="space-y-12">
-            <div className="space-y-4 text-center lg:text-left">
-              <div className="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-500/10 rounded-lg">
-                <p className="text-blue-700 dark:text-blue-400 font-bold text-xs uppercase tracking-widest">Connect</p>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
-                Let's Start a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Conversation.</span>
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto lg:mx-0 text-base leading-relaxed">
-                Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              {[
-                { icon: "📍", label: "Location", value: "Islamabad, Pakistan" },
-                { icon: "✉️", label: "Email", value: "hello@umershahid.dev" },
-                { icon: "📱", label: "Phone", value: "+92 3XX XXXXXXX" }
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-6 group">
-                  <div className="w-14 h-14 rounded-2xl bg-gray-50 dark:bg-white/5 flex items-center justify-center text-2xl border border-gray-100 dark:border-white/10 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                    {item.icon}
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">{item.label}</p>
-                    <p className="font-bold text-gray-900 dark:text-white">{item.value}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="pt-8 flex justify-center lg:justify-start gap-4">
-              {/* Social links (placeholder) */}
-              {["GitHub", "LinkedIn", "Twitter"].map((social) => (
-                <a key={social} href="#" className="px-6 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl font-bold text-xs uppercase tracking-widest hover:scale-105 active:scale-95 transition-all">
-                  {social}
-                </a>
-              ))}
-            </div>
+        {/* Header */}
+        <div className="space-y-4 mb-16">
+          <div className="inline-block px-4 py-1.5 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
+            <p className="text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-widest">
+              Contact
+            </p>
           </div>
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white leading-tight">
+            Let's Start a Conversation.
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+            Have a project in mind or just want to say hi? I'm always open to discussing new opportunities and creative ideas.
+          </p>
+        </div>
 
-          {/* Form Side */}
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-[3rem] opacity-10 blur-2xl"></div>
-            <form onSubmit={handleSubmit} className="relative bg-white dark:bg-[#050505] p-8 md:p-10 rounded-[2.5rem] border border-gray-100 dark:border-white/10 shadow-2xl space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest pl-1">Your Name</label>
-                  <input
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 p-4 rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
-                    placeholder="Full Name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest pl-1">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 p-4 rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
-                    placeholder="name@example.com"
-                  />
-                </div>
-              </div>
+        {/* Contact Actions */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-              <div className="space-y-2">
-                <label className="text-[11px] font-bold text-gray-400 uppercase tracking-widest pl-1">How can I help?</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 p-4 rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white resize-none"
-                  placeholder="Project details, timeline, or just a friendly greeting..."
-                />
-              </div>
+          {/* Email */}
+          <a
+            href="mailto:devumer.shahid@gmail.com"
+            className="group flex flex-col items-center justify-center p-8 rounded-[2rem] bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 hover:border-blue-500/20 hover:shadow-lg transition-all duration-300"
+          >
+            <div className="w-16 h-16 mb-6 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-3xl shadow-sm text-blue-500 group-hover:scale-110 transition-transform duration-300">
+              ✉️
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Email Me</h3>
+            <p className="text-gray-500 dark:text-gray-400 font-medium">devumer.shahid@gmail.com</p>
+          </a>
 
-              <button
-                type="submit"
-                disabled={status === "sending"}
-                className="w-full group relative inline-flex items-center justify-center px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50"
-              >
-                <span className="relative z-10 flex items-center gap-2 text-sm uppercase tracking-widest">
-                  {status === "sending" ? "Sending..." : status === "success" ? "Message Sent! 🎉" : "Send Message"}
-                  {status === "" && (
-                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  )}
-                </span>
-              </button>
-            </form>
-          </div>
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/muhamad-umer-shahid/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center justify-center p-8 rounded-[2rem] bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 hover:border-blue-500/20 hover:shadow-lg transition-all duration-300"
+          >
+            <div className="w-16 h-16 mb-6 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-3xl shadow-sm text-blue-600 group-hover:scale-110 transition-transform duration-300">
+              in
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">LinkedIn</h3>
+            <p className="text-gray-500 dark:text-gray-400 font-medium">Connect professionally</p>
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/devUmerShahid"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col items-center justify-center p-8 rounded-[2rem] bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 hover:border-blue-500/20 hover:shadow-lg transition-all duration-300"
+          >
+            <div className="w-16 h-16 mb-6 rounded-2xl bg-white dark:bg-white/5 flex items-center justify-center text-3xl shadow-sm text-gray-900 dark:text-white group-hover:scale-110 transition-transform duration-300">
+              <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">GitHub</h3>
+            <p className="text-gray-500 dark:text-gray-400 font-medium">Check out my code</p>
+          </a>
 
         </div>
+
       </div>
     </section>
   );
