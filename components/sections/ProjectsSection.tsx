@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       color: "from-blue-500 to-indigo-600",
       link: "https://tuneflow-lime.vercel.app/",
       github:"https://github.com/devUmerShahid/tuneflow",
-      image: "/images/tuneflow.png"
+      image: "/images/tuneflow1.jpg",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
       color: "from-purple-500 to-pink-600",
       link: "https://mystore-sable-psi.vercel.app/",
       github:"https://github.com/devUmerShahid/mystore",
-      image: "/images/mystore.png"
+      image: "/images/mystore1.jpg"
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       color: "from-emerald-500 to-teal-600",
       link: "https://guardo-eight.vercel.app/",
       github:"https://github.com/devUmerShahid/guardo",
-      image: "/images/passaver.png"
+      image: "/images/passaver1.jpg"
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       color: "from-orange-500 to-red-600",
       link: "https://demo-react-app-inky.vercel.app/",
       github:"https://github.com/devUmerShahid/demo-react-app",
-      image: "/images/landingpage.png"
+      image: "/images/landingpage1.jpg"
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-cyan-500 to-blue-600",
       link: "https://hdpo.org/",
-      image: "/images/hdpo.png"
+      image: "/images/hdpo1.jpg"
     },
     {
       id: 6,
@@ -63,7 +63,7 @@ export default function ProjectsSection() {
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-violet-500 to-purple-600",
       link: "https://antidumpingpakistan.com/",
-      image: "/images/antidumping.png"
+      image: "/images/antidumping1.jpg"
     },
     {
       id: 7,
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-blue-500 to-indigo-600",
       link: "https://webplaners.com/",
-      image: "/images/webplaners.png"
+      image: "/images/webplaners1.jpg"
     },
     {
       id: 8,
@@ -81,7 +81,7 @@ export default function ProjectsSection() {
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-blue-500 to-indigo-600",
       link: "https://unicornhotelllanidloes.co.uk/",
-      image: "/images/unicorn.png"
+      image: "/images/unicorn1.jpg"
     },
     {
       id: 9,
@@ -90,7 +90,7 @@ export default function ProjectsSection() {
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-blue-500 to-indigo-600",
       link: "https://www.sips.uk.com/",
-      image: "/images/sips.png"
+      image: "/images/sips1.jpg"
     },
   ];
 
