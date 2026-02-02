@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Umer Shahid - Professional Portfolio
 
-## Getting Started
+![Portfolio Preview](public/images/portfolio-preview.png)
+*(Note: Replace `public/images/portfolio-preview.png` with an actual screenshot of your portfolio if available, or remove this line)*
 
-First, run the development server:
+## 🚀 Overview
+
+Welcome to the repository of my personal portfolio website. This project is a showcase of my skills, projects, and professional journey as a developer. Built with the latest web technologies, it demonstrates modern web development practices, responsive design, and a commitment to user experience.
+
+The application serves as a central hub to connect with me, view my latest work, and understand my technical expertise.
+
+## ✨ Key Features
+
+-   **Modern & Responsive Design:** Crafted with a mobile-first approach using [Tailwind CSS v4](https://tailwindcss.com/) for a sleek, consistent look across all devices.
+-   **Dynamic Sections:** Modularized architecture for easy updates and maintenance.
+    -   **Hero Section:** Engaging introduction with visual headers.
+    -   **About Me:** Professional background and personal insights.
+    -   **Skills & Expertise:** Visual representation of technical proficiencies.
+    -   **Projects Showcase:** Highlighted case studies with descriptions and links.
+    -   **Contact Form:** Integrated section for inquiries and networking.
+-   **Performance Optimized:** Powered by [Next.js 16](https://nextjs.org/) for server-side rendering, fast page loads, and SEO optimization.
+-   **Type Safety:** Built entirely with [TypeScript](https://www.typescriptlang.org/) for robust and maintainable code.
+
+## 🛠️ Technology Stack
+
+This project leverages a cutting-edge stack to ensure performance, scalability, and developer experience:
+
+-   **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+-   **Library:** [React 19](https://react.dev/)
+-   **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Linting:** ESLint
+
+## 🏁 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Ensure you have the following installed:
+-   [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+-   npm (comes with Node.js)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/devUmerShahid/umer-portfolio.git
+    cd umer-portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+### Running the Development Server
+
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page updates automatically as you edit the file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Project Structure
 
-## Deploy on Vercel
+Here is a quick overview of the top-level directory structure:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+umer-portfolio/
+├── app/                  # Next.js App Router pages and layouts
+│   ├── layout.tsx        # Main layout with Navbar/Footer
+│   └── page.tsx          # Homepage assembling all sections
+├── components/           # Reusable UI components
+│   ├── sections/         # Page sections (Hero, About, Projects, etc.)
+│   ├── Navbar.tsx        # Global navigation
+│   └── Footer.tsx        # Global footer
+├── public/               # Static assets (images, icons)
+└── ...config files       # Tailwind, TypeScript, Next.js configs
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+## 📧 Contact
+
+**Umer Shahid**
+
+-   **GitHub:** [devUmerShahid](https://github.com/devUmerShahid)
+-   **Email:** [Your Email Here]
+-   **LinkedIn:** [Your LinkedIn Profile Here]
+
+---
+*Built with ❤️ by Umer Shahid.*

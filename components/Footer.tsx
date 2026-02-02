@@ -124,7 +124,7 @@ export default function Footer() {
                         &copy; {currentYear} Umer Shahid. All rights reserved.
                     </p>
                     <p className="text-gray-400 text-xs font-medium flex items-center gap-1">
-                        Built with <span className="text-red-500">♥</span> and Next.js
+                        Built with Next.js & Tailwind CSS.
                     </p>
                 </div>
 

@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#fafafa] dark:bg-[#050505] transition-colors duration-500 pt-15"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#fafafa] dark:bg-[#050505] transition-colors duration-500 pt-32"
     >
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -65,7 +65,7 @@ export default function Hero() {
                 </span>
               </a>
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/1xGjSOZqd9Xi45Bkm7Yr0RpUQerFOxbb7/view?usp=sharing"
                 className="group px-8 py-3.5 bg-transparent text-gray-900 dark:text-white font-bold rounded-xl border-2 border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/5 transition-all hover:border-gray-900 dark:hover:border-white"
               >
                 <span className="flex items-center gap-2 text-sm uppercase tracking-wide">
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           {/* Right Visual Element */}
-          <div className="flex-1 relative w-full max-w-[380px] aspect-square animate-fade-in animation-delay-400">
+          <div className="hidden lg:block flex-1 relative w-full max-w-[380px] aspect-square animate-fade-in animation-delay-400">
             {/* Abstract Decorative Shapes */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-[3rem] rotate-6 scale-95 blur-sm"></div>
             <div className="absolute inset-0 bg-white dark:bg-white/5 backdrop-blur-3xl rounded-[3rem] border border-white/20 dark:border-white/10 shadow-2xl flex items-center justify-center overflow-hidden group">

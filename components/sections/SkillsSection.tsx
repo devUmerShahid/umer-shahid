@@ -5,75 +5,67 @@ import React from "react";
 const skills = [
     {
         name: "React.js",
-        level: 80,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        color: "#61DAFB",
     },
     {
         name: "Next.js",
-        level: 70,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-        color: "#000000",
     },
     {
         name: "JavaScript",
-        level: 80,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        color: "#F7DF1E",
     },
     {
         name: "TypeScript",
-        level: 70,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-        color: "#3178C6",
+    },
+    {
+        name: "HTML5",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    {
+        name: "CSS3",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
     {
         name: "Tailwind CSS",
-        level: 95,
         icon: "/images/tailwindcss.svg",
-        color: "#38B2AC",
     },
     {
         name: "Node.js",
-        level: 70,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        color: "#339933",
     },
     {
         name: "MongoDB",
-        level: 65,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        color: "#47A248",
     },
     {
         name: "Firebase",
-        level: 80,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-        color: "#FFCA28",
     },
     {
         name: "Git",
-        level: 75,
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-        color: "#F05032",
     },
     {
         name: "REST API",
-        level: 70,
         icon: "/images/rest-api.svg",
-        color: "#009688",
     },
     {
         name: "Postman",
-        level: 75,
         icon: "/images/postman.svg",
-        color: "#FF6C37",
+    },
+    {
+        name: "WordPress",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    },
+    {
+        name: "Elementor",
+        icon: "https://cdn.simpleicons.org/elementor",
     },
     {
         name: "Antigravity",
-        level: 90,
         icon: "/images/Antigravity.webp",
-        color: "#6366F1",
     },
 ];
 
@@ -95,34 +87,16 @@ export default function SkillsSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {skills.map((skill, index) => (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {skills.map((skill) => (
                         <div
                             key={skill.name}
-                            className="group bg-white dark:bg-white/5 border border-gray-100 dark:border-white/5 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                            className="group bg-white dark:bg-white/5 border border-gray-100 dark:border-white/5 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
                         >
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="w-12 h-12 flex items-center justify-center bg-gray-50 dark:bg-white/5 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                                    <img src={skill.icon} alt={skill.name} className="w-7 h-7" />
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-gray-900 dark:text-white">{skill.name}</h3>
-                                    <span className="text-xs font-medium text-gray-500 dark:text-gray-400">
-                                        {skill.level}% Proficiency
-                                    </span>
-                                </div>
+                            <div className="w-12 h-12 flex items-center justify-center bg-gray-50 dark:bg-white/5 rounded-xl group-hover:scale-110 transition-transform duration-300 shrink-0">
+                                <img src={skill.icon} alt={skill.name} className="w-7 h-7" />
                             </div>
-
-                            {/* Progress Bar */}
-                            <div className="h-2 w-full bg-gray-100 dark:bg-white/5 rounded-full overflow-hidden">
-                                <div
-                                    className="h-full rounded-full transition-all duration-1000 group-hover:w-full"
-                                    style={{
-                                        width: `${skill.level}%`,
-                                        backgroundColor: skill.color
-                                    }}
-                                ></div>
-                            </div>
+                            <h3 className="font-bold text-gray-900 dark:text-white">{skill.name}</h3>
                         </div>
                     ))}
                 </div>
