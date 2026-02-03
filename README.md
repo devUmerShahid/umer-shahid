@@ -42,7 +42,7 @@ Ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/devUmerShahid/umer-portfolio.git
+    git clone https://github.com/devUmerShahid/umer-shahid.git
     cd umer-portfolio
     ```
 
