@@ -1,8 +1,5 @@
 # Umer Shahid - Professional Portfolio
 
-![Portfolio Preview](public/images/portfolio-preview.png)
-*(Note: Replace `public/images/portfolio-preview.png` with an actual screenshot of your portfolio if available, or remove this line)*
-
 ## 🚀 Overview
 
 Welcome to the repository of my personal portfolio website. This project is a showcase of my skills, projects, and professional journey as a developer. Built with the latest web technologies, it demonstrates modern web development practices, responsive design, and a commitment to user experience.
@@ -45,7 +42,7 @@ Ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/devUmerShahid/umer-portfolio.git
+    git clone https://github.com/devUmerShahid/umer-shahid.git
     cd umer-portfolio
     ```
 
