@@ -46,10 +46,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2 z-50">
             <div className="w-10 h-10 bg-gray-900 dark:bg-white rounded-xl flex items-center justify-center transition-transform group-hover:rotate-12">
-              <span className="text-white dark:text-gray-900 font-black text-xl">U</span>
+              <span className="text-white dark:text-gray-900 font-black text-xl">US</span>
             </div>
             <span className="text-xl font-black tracking-tighter text-gray-900 dark:text-white">
-              SHAHID.
+              UMER SHAHID.
             </span>
           </Link>
 
