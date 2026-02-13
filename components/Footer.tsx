@@ -120,10 +120,10 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-gray-100 dark:border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-gray-400 text-xl font-medium text-center md:text-left">
+                    <p className="text-gray-400 text-[16px] font-medium text-center md:text-left">
                         &copy; {currentYear} Umer Shahid. All rights reserved.
                     </p>
-                    <p className="text-gray-400 text-xl font-medium flex items-center gap-1">
+                    <p className="text-gray-400 text-[16px] font-medium flex items-center gap-1">
                         Built with Next.js & Tailwind CSS.
                     </p>
                 </div>
