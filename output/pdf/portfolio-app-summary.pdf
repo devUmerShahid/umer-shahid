@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+6 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >> endobj
+7 0 obj << /Length 3362 >> stream
+BT /F2 15 Tf 1 0 0 1 44.00 748.00 Tm (App Summary - umer-portfolio) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 44.00 735.00 Tm (Evidence source: README.md, package.json, app/*.tsx, components/**/*.tsx) Tj ET
+44 724.50 m 568 724.50 l S
+BT /F2 10.5 Tf 1 0 0 1 44.00 711.50 Tm (What It Is) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 700.20 Tm (- A personal portfolio web app built with Next.js \(App Router\), React, and TypeScript.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 688.90 Tm (- It presents the developer profile, skills, selected projects, and contact channels in a) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 677.60 Tm (  single-page layout.) Tj ET
+BT /F2 10.5 Tf 1 0 0 1 44.00 664.30 Tm (Who It Is For) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 653.00 Tm (- Primary persona: recruiters, hiring managers, and potential freelance clients evaluating) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 641.70 Tm (  Umer Shahid for web development work.) Tj ET
+BT /F2 10.5 Tf 1 0 0 1 44.00 628.40 Tm (What It Does) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 617.10 Tm (- Renders a full landing flow with Hero, About, Skills, Projects, and Contact sections.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 605.80 Tm (- Provides responsive navigation with desktop links and a mobile overlay menu.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 594.50 Tm (- Shows a skills grid with named technologies and visual icons.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 583.20 Tm (- Displays project cards with image, description, tech tags, live link, and GitHub link,) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 571.90 Tm (  plus a Load More interaction.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 560.60 Tm (- Offers direct contact actions: mailto email, LinkedIn, and GitHub profile links.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 549.30 Tm (- Applies custom CSS animations and smooth scroll behavior for section navigation.) Tj ET
+BT /F2 10.5 Tf 1 0 0 1 44.00 536.00 Tm (How It Works \(Architecture\)) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 524.70 Tm (- Framework layer: Next.js 16 App Router with global layout in app/layout.tsx.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 513.40 Tm (- Composition layer: app/page.tsx assembles section components from components/sections.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 502.10 Tm (- UI layer: client-side React components manage interactive state \(navbar scroll/menu and) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 490.80 Tm (  project pagination\).) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 479.50 Tm (- Data flow: static arrays and strings inside components feed rendering \(skills and) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 468.20 Tm (  projects\).) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 456.90 Tm (- External touchpoints: outbound links to GitHub, LinkedIn, Google Drive resume, and) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 445.60 Tm (  mailto.) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 434.30 Tm (- Backend API, database, authentication service, and server-side data fetching: Not found) Tj ET
+BT /F1 9 Tf 1 0 0 1 56.00 423.00 Tm (  in repo.) Tj ET
+BT /F2 10.5 Tf 1 0 0 1 44.00 409.70 Tm (How To Run \(Minimal\)) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 398.40 Tm (- Install dependencies: npm install) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 387.10 Tm (- Start development server: npm run dev) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 375.80 Tm (- Open: http://localhost:3000) Tj ET
+BT /F1 9 Tf 1 0 0 1 50.00 364.50 Tm (- Optional production run: npm run build && npm start) Tj ET
+BT /F3 8 Tf 1 0 0 1 358.00 351.20 Tm (Generated from repository evidence only) Tj ET
+endstream endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000000331 00000 n 
+0000000406 00000 n 
+0000000484 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+3898
+%%EOF

@@ -13,7 +13,7 @@ export default function AboutSection() {
             <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-3xl opacity-20 blur-2xl group-hover:opacity-30 transition-opacity"></div>
             <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto bg-gray-100 dark:bg-white/5 rounded-3xl border border-gray-200 dark:border-white/10 overflow-hidden shadow-lg">
               <img
-                src="/images/umer_pfp.jpg"
+                src="/images/umer1_pfp.png"
                 alt="Umer Shahid"
                 className="w-full h-full object-cover"
                 onError={(e) => {

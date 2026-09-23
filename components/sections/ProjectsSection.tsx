@@ -9,6 +9,25 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
+      title: "OrangeSkyHR",
+      description: "A full-stack HR consultancy platform with a custom headless CMS, built for SEO-optimized, high-performance client acquisition",
+      tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "Cloudinary", "Tiptap"],
+      color: "from-orange-400 to-amber-600",
+      link: "https://orangeskyhr.com/",
+      github: "",
+      image: "/images/orangeskyhr.png",
+    },
+    {
+      id: 2,
+      title: "Web Planers",
+      description: "A multi-page website for a agency that provides digital services",
+      tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
+      color: "from-blue-500 to-indigo-600",
+      link: "https://webplaners.com/",
+      image: "/images/webplaners1.jpg"
+    },
+    {
+      id: 3,
       title: "Tuneflow Music Streaming",
       description: "A full-featured, production-ready music streaming web app that closely replicates Spotify’s core experience",
       tech: ["React.js", "ExpressJS", "MongoDB","Node.js","JWT" , "Tailwind"],
@@ -18,34 +37,13 @@ export default function ProjectsSection() {
       image: "/images/tuneflow1.jpg",
     },
     {
-      id: 2,
-      title: "E-Commerce Experience",
-      description: "A modern, full-featured e-commerce application built with React and Firebase.",
-      tech: ["React", "Firebase", "Tailwind CSS", "React-Router"],
-      color: "from-purple-500 to-pink-600",
-      link: "https://mystore-sable-psi.vercel.app/",
-      github:"https://github.com/devUmerShahid/mystore",
-      image: "/images/mystore1.jpg"
-    },
-    {
-      id: 3,
-      title: "Password Saver",
-      description: "Guardo is a secure and user-friendly password manager built with React.js, Vite, and Firebase.",
-      tech: ["React.js", "Vite", "Firebase"],
-      color: "from-emerald-500 to-teal-600",
-      link: "https://guardo-eight.vercel.app/",
-      github:"https://github.com/devUmerShahid/guardo",
-      image: "/images/passaver1.jpg"
-    },
-    {
       id: 4,
-      title: "Landing Page",
-      description: "A simple react demo single page project for practice",
-      tech: ["React", "Tailwind"],
-      color: "from-orange-500 to-red-600",
-      link: "https://demo-react-app-inky.vercel.app/",
-      github:"https://github.com/devUmerShahid/demo-react-app",
-      image: "/images/landingpage1.jpg"
+      title: "Antidumping Pakistan Website",
+      description: "Antidumping Pakistan is a law firm that provides legal services to individuals and businesses related to antidumping in Pakistan.",
+      tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
+      color: "from-violet-500 to-purple-600",
+      link: "https://antidumpingpakistan.com/",
+      image: "/images/antidumping1.jpg"
     },
     {
       id: 5,
@@ -58,24 +56,6 @@ export default function ProjectsSection() {
     },
     {
       id: 6,
-      title: "Antidumping Pakistan Website",
-      description: "Antidumping Pakistan is a law firm that provides legal services to individuals and businesses related to antidumping in Pakistan.",
-      tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
-      color: "from-violet-500 to-purple-600",
-      link: "https://antidumpingpakistan.com/",
-      image: "/images/antidumping1.jpg"
-    },
-    {
-      id: 7,
-      title: "Web Planers",
-      description: "A multi-page website for a agency that provides digital services",
-      tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
-      color: "from-blue-500 to-indigo-600",
-      link: "https://webplaners.com/",
-      image: "/images/webplaners1.jpg"
-    },
-    {
-      id: 8,
       title: "Unicorn Hotel",
       description: "Website for a hotel business in UK",
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
@@ -84,13 +64,44 @@ export default function ProjectsSection() {
       image: "/images/unicorn1.jpg"
     },
     {
-      id: 9,
+      id: 7,
       title: "Sips Uk",
       description: "A multi-page website for a Structural Insulated Panel Manufacturers in UK",
       tech: ["Wordpress", "Elementor", "HTML", "CSS", "JS", "PHP"],
       color: "from-blue-500 to-indigo-600",
       link: "https://www.sips.uk.com/",
       image: "/images/sips1.jpg"
+    },
+    
+    {
+      id: 8,
+      title: "E-Commerce Experience",
+      description: "A modern, full-featured e-commerce application built with React and Firebase.",
+      tech: ["React", "Firebase", "Tailwind CSS", "React-Router"],
+      color: "from-purple-500 to-pink-600",
+      link: "https://mystore-sable-psi.vercel.app/",
+      github:"https://github.com/devUmerShahid/mystore",
+      image: "/images/mystore1.jpg"
+    },
+    {
+      id: 9,
+      title: "Password Saver",
+      description: "Guardo is a secure and user-friendly password manager built with React.js, Vite, and Firebase.",
+      tech: ["React.js", "Vite", "Firebase"],
+      color: "from-emerald-500 to-teal-600",
+      link: "https://guardo-eight.vercel.app/",
+      github:"https://github.com/devUmerShahid/guardo",
+      image: "/images/passaver1.jpg"
+    },
+    {
+      id: 10,
+      title: "Landing Page",
+      description: "A simple react demo single page project for practice",
+      tech: ["React", "Tailwind"],
+      color: "from-orange-500 to-red-600",
+      link: "https://demo-react-app-inky.vercel.app/",
+      github:"https://github.com/devUmerShahid/demo-react-app",
+      image: "/images/landingpage1.jpg"
     },
   ];
 
@@ -111,7 +122,7 @@ export default function ProjectsSection() {
             Building Digital Masterpieces.
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-            From architecture to implementation, here's a glimpse into the diverse range of projects I've crafted recently.
+            From architecture to implementation, here is a glimpse into the diverse range of projects I've crafted recently.
           </p>
         </div>
 
