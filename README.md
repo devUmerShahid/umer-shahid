@@ -111,8 +111,8 @@ Contributions are welcome! If you have suggestions for improvements or find any 
 **Umer Shahid**
 
 -   **GitHub:** [devUmerShahid](https://github.com/devUmerShahid)
--   **Email:** [Your Email Here]
--   **LinkedIn:** [Your LinkedIn Profile Here]
+-   **Email:** umershahid1260@gmail.com
+-   **LinkedIn:** [muhamad-umer-shahid](https://www.linkedin.com/in/muhamad-umer-shahid/)
 
 ---
 *Built with ❤️ by Umer Shahid.*
