@@ -36,7 +36,7 @@ export default function AboutSection() {
 
               <div className="space-y-4 text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  I am a Frontend-focused MERN Stack Developer with 1+ year of hands-on experience building modern web applications. I specialize in React.js, Next.js, and Tailwind CSS to deliver responsive and user-centric interfaces.
+                  I am a Full-Stack Developer with 1+ year of hands-on experience building modern web applications. I specialize in React.js, Next.js, and Tailwind CSS to deliver responsive and user-centric interfaces.
                 </p>
                 <p>
                   On the backend, I work with the MERN stack and use Firebase as BaaS for authentication, databases, and hosting. I enjoy solving real-world problems, writing clean code, and continuously improving my development skills.
