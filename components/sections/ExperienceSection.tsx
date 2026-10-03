@@ -14,12 +14,12 @@ const experiences: Experience[] = [
     {
         company: "Alpha Digital",
         tagline: "Digital agency",
-        position: "Web Developer",
+        position: "Full Stack Developer",
         location: "Islamabad, Pakistan (On-site)",
-        industry: "Digital Marketing / Web Development",
+        industry: "Digital Marketing / AI Development",
         date: "Aug 2026 - Present",
         description:
-            "As a Web Developer, I build and maintain responsive websites using React.js, Next.js, and WordPress, converting UI/UX designs into functional, cross-browser-compatible pages, and collaborate closely with SEO and marketing teams to optimize site structure and performance.",
+            "As a Full Stack Developer, I architect and build optimized, scalable systems using React.js, Node.js, and FastAPI, while seamlessly integrating AI systems and features to drive high-performance digital solutions.",
         companyDescription:
             "Alpha Digital is a digital agency delivering websites and web-based marketing solutions for clients.",
         website: "http://www.alphadigital.live",
